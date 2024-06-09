@@ -1,0 +1,14 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+MYSQLDATABASE = os.getenv("MYSQLDATABASE")
+MYSQLHOST = os.getenv("MYSQLHOST")
+MYSQLPASSWORD = os.getenv("MYSQLPASSWORD")
+MYSQLPORT = os.getenv("MYSQLPORT")
+MYSQLUSER = os.getenv("MYSQLUSER")
+MYSQL_DATABASE = os.getenv("MYSQL_DATABASE")
+MYSQL_ROOT_PASSWORD = os.getenv("MYSQL_ROOT_PASSWORD")
+
+SQLALCHEMY_DATABASE_URI = f"mysql+mysqlconnector://{MYSQLUSER}:{MYSQLPASSWORD}@{MYSQLHOST}:{MYSQLPORT}/{MYSQLDATABASE}"
