@@ -2,6 +2,9 @@ from flask import request, jsonify
 from models import session
 from models.user import User
 
+def teste():
+    return jsonify({'message': 'Sistema funcionando'})
+
 def create_user():
     data = request.get_json()
     user_admin = session.query(User).filter_by(email=data['email_admin']).first()

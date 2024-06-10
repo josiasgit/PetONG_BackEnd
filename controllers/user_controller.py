@@ -3,6 +3,8 @@ from services import user_service
 
 user_bp = Blueprint('user_bp', __name__)
 
+user_bp.route('/', methods=['GET'])(user_service.teste)
+
 user_bp.route('/users', methods=['POST'])(user_service.create_user)
 user_bp.route('/users', methods=['GET'])(user_service.get_users)
 user_bp.route('/admins', methods=['GET'])(user_service.get_admins)
