@@ -1,2 +1,3 @@
 # PetONG-BackEnd
-Projeto Integrador UniVesp - PET ONG
+
+Projeto Integrador
