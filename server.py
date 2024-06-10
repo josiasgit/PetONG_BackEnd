@@ -12,4 +12,4 @@ app.register_blueprint(post_bp)
 if __name__ == "__main__":
     create_tables()  # Chame a função para criar as tabelas
     create_seeds()  # Chame a função para criar os seeds
-    app.run(port=5000,debug=True)
+    app.run(host="0.0.0.0",port=5000,debug=True)
